@@ -1,0 +1,12 @@
+<testsuite failures="0" name="src/test/java/tests/loginThroughCSVDataPayload.feature" skipped="0" tests="1" time="1.310454">
+  <testcase classname="src.test.java.tests.loginThroughCSVDataPayload" name="login With Admin" time="1.310454">
+    <system-out>Given url baseUrl+'/v1/authentication' .................................... passed
+And request { "email": sathish@gmail.com,"password":sathish@123,"device_token":,"domain_name": optimworks} . passed
+And headers {Content-Type: 'application/json', Connection: 'Keep-Alive'} .. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def accessToken = response.token ........................................ passed
+* print accessToken ....................................................... passed</system-out>
+  </testcase>
+</testsuite>

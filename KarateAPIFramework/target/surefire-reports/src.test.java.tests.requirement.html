@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.tests.requirement</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2024-04-15 05:19:38 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:15]">[1:15] get the reponse and pass it to csv </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:27]">[2:27] get the reponse and pass it to csv </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/tests/requirement.feature</span><span class="feature-description">Writing the data into csv fuile</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:15]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:15]</span><span class="scenario-name">get the reponse and pass it to csv </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2063</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:15]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url baseUrl1</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def ExcelReader = Java.type('Utilities.WriteDataInExcel')</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def rowNum1 = 2</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="4">
+                            <div class="step-ref bg-step">4</div>
+                            <div class="step-cell passed">* def rowNum2 = 3</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="5">
+                            <div class="step-ref bg-step">5</div>
+                            <div class="step-cell passed">* def scenario1 = ExcelReader.setTheValuesFromExcelFileInFeatureFile(rowNum1)</div>
+                        </div>
+                        <div class="time-cell passed">895</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="6">
+                            <div class="step-ref bg-step">6</div>
+                            <div class="step-cell passed">* print scenario1</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">17:19:37.052 [print] [
+  "2",
+  "200"
+]</div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="7">
+                            <div class="step-ref bg-step">7</div>
+                            <div class="step-cell passed">* print scenario1[0]</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">17:19:37.065 [print] 2</div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="8">
+                            <div class="step-ref bg-step">8</div>
+                            <div class="step-cell passed">* def scenario2 = ExcelReader.setTheValuesFromExcelFileInFeatureFile(rowNum2)</div>
+                        </div>
+                        <div class="time-cell passed">35</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="9">
+                            <div class="step-ref bg-step">9</div>
+                            <div class="step-cell passed">* print scenario2</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="9">17:19:37.100 [print] [
+  "3",
+  "200"
+]</div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-cell passed">* print scenario2[0]</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="preformatted" data-parent="10">17:19:37.106 [print] 3</div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">Given path urlPath+scenario1[0]</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* def responseCode = scenario1[1]</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">911</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">17:19:37.489 request:
+1 &gt; GET https://reqres.in/api/users%3Fpage=2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.18)
+
+17:19:38.030 response time in milliseconds: 538.03
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 5076
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 874bb69ecdf32e8d-HYD
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 15 Apr 2024 11:49:37 GMT
+1 &lt; Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 &lt; Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 &lt; Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713176701&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=loP%2BKJcESuq%2FvwVXFd5E2bNiaQqyyL1xr8ISwvKOH14%3D"}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713176701&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=loP%2BKJcESuq%2FvwVXFd5E2bNiaQqyyL1xr8ISwvKOH14%3D
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">* print responseCode</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="14">17:19:38.035 [print] 200</div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="16">17:19:38.036 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">* def responseStatusVariable = responseStatus</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">* print responseStatusVariable</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="18">17:19:38.037 [print] 200</div>
+                    <div class="step-row">
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
+                            <div class="step-cell passed">* ExcelReader.setTheStatusIntoExcelFile(responseStatusVariable,rowNum1)</div>
+                        </div>
+                        <div class="time-cell passed">173</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:27]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:27]</span><span class="scenario-name">get the reponse and pass it to csv </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 569</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:27]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="20">
+                            <div class="step-ref bg-step">20</div>
+                            <div class="step-cell passed">* url baseUrl1</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="21">
+                            <div class="step-ref bg-step">21</div>
+                            <div class="step-cell passed">* def ExcelReader = Java.type('Utilities.WriteDataInExcel')</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="22">
+                            <div class="step-ref bg-step">22</div>
+                            <div class="step-cell passed">* def rowNum1 = 2</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="23">
+                            <div class="step-ref bg-step">23</div>
+                            <div class="step-cell passed">* def rowNum2 = 3</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="24">
+                            <div class="step-ref bg-step">24</div>
+                            <div class="step-cell passed">* def scenario1 = ExcelReader.setTheValuesFromExcelFileInFeatureFile(rowNum1)</div>
+                        </div>
+                        <div class="time-cell passed">24</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="25">
+                            <div class="step-ref bg-step">25</div>
+                            <div class="step-cell passed">* print scenario1</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="25">17:19:38.245 [print] [
+  "2",
+  "200"
+]</div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="26">
+                            <div class="step-ref bg-step">26</div>
+                            <div class="step-cell passed">* print scenario1[0]</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="26">17:19:38.247 [print] 2</div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="27">
+                            <div class="step-ref bg-step">27</div>
+                            <div class="step-cell passed">* def scenario2 = ExcelReader.setTheValuesFromExcelFileInFeatureFile(rowNum2)</div>
+                        </div>
+                        <div class="time-cell passed">16</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="28">
+                            <div class="step-ref bg-step">28</div>
+                            <div class="step-cell passed">* print scenario2</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="28">17:19:38.263 [print] [
+  "3",
+  "200"
+]</div>
+                    <div class="step-row" data-parent="[2:27]bg">
+                        <div class="step-container" id="29">
+                            <div class="step-ref bg-step">29</div>
+                            <div class="step-cell passed">* print scenario2[0]</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="29">17:19:38.265 [print] 3</div>
+                    <div class="step-row">
+                        <div class="step-container" id="30">
+                            <div class="step-ref passed">30</div>
+                            <div class="step-cell passed">Given path urlPath+scenario2[0]</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">* def responseCode = scenario2[1]</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">466</div>
+                    </div>
+                    <div class="preformatted" data-parent="32">17:19:38.284 request:
+1 &gt; GET https://reqres.in/api/users%3Fpage=3
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.18)
+
+17:19:38.747 response time in milliseconds: 463.11
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: MISS
+1 &lt; CF-RAY: 874bb6a0fe21179c-MAA
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 15 Apr 2024 11:49:38 GMT
+1 &lt; Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 &lt; Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 &lt; Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713181778&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=H8OjoLfqpIZqZZpi3r7Ry8apMYK6DPa3vc9mpsPdTS0%3D"}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713181778&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=H8OjoLfqpIZqZZpi3r7Ry8apMYK6DPa3vc9mpsPdTS0%3D
+1 &lt; Server: cloudflare
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">* print responseCode</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="33">17:19:38.748 [print] 200</div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="35">17:19:38.748 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-cell passed">* def responseStatusVariable = responseStatus</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="37">
+                            <div class="step-ref passed">37</div>
+                            <div class="step-cell passed">* print responseStatusVariable</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">17:19:38.749 [print] 200</div>
+                    <div class="step-row">
+                        <div class="step-container" id="38">
+                            <div class="step-ref passed">38</div>
+                            <div class="step-cell passed">* ExcelReader.setTheStatusIntoExcelFile(responseStatusVariable,rowNum2)</div>
+                        </div>
+                        <div class="time-cell passed">42</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
