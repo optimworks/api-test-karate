@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.tests.login</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2024-04-03 03:51:21 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:6]">[1:6] Admin login </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/tests/login.feature</span><span class="feature-description">Login to UrBuddi</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:6]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Admin login </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 954</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:6]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:6]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* def requestPayload = read('classpath:src/test/resources/Payloads/loginPayload.json')</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given url baseUrl+'/v1/authentication'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">And request requestPayload</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">And headers {Content-Type: 'application/json', Connection: 'Keep-Alive'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">When method post</div>
+                        </div>
+                        <div class="time-cell passed">931</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">15:51:20.917 request:
+1 &gt; POST https://dev-api.urbuddi.com/v1/authentication
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 99
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dev-api.urbuddi.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.18)
+{"email":"sathish@gmail.com","password":"sathish@123","device_token":"","domain_name":"optimworks"}
+
+15:51:21.593 response time in milliseconds: 673.75
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 644
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 03 Apr 2024 10:21:20 GMT
+1 &lt; Server: nginx/1.18.0 (Ubuntu)
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdGhpc2hAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiZW1wbG95ZWVfaWQiOiJvdzAyMzIzIiwiZmlyc3RfbmFtZSI6IlNhdGhpc2giLCJsYXN0X25hbWUiOiJLdW1hciIsInByb2ZpbGVfcGljdHVyZV91cmwiOiJodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3czaW1hZ2VzL2F2YXRhcjIucG5nIiwidGVuYW50X2lkIjoiYmVmNTNiZDQtNTVmYi00ZWYwLTkzZjktNTUzZjY0NDgwNWVlIiwicHJpbWFyeV9jb2xvciI6IiNlYjcxMzQiLCJzZWNvbmRhcnlfY29sb3IiOiIjZmZmZmZmIiwibG9nb191cmwiOiJodHRwczovL3VyYnVkZGkuczMuYXAtc291dGgtMS5hbWF6b25hd3MuY29tL09wdGltd29ya3NfVGVjaG5vbG9naWVzX1B2dF9MdGQvbG9nb191cmwvbG9nb191cmxfMjAyNDAyMjExMDA4MjMucG5nIn0.IlJzNwifaTwfDdSDV_rTnc4H_c6dN7fzV6yyCxO5tRU"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment">#* print response</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* def accessToken = response.token</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">* print 'access token is '+accessToken</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="8">15:51:21.606 [print] access token is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdGhpc2hAZ21haWwuY29tIiwicm9sZSI6IkFkbWluIiwiZW1wbG95ZWVfaWQiOiJvdzAyMzIzIiwiZmlyc3RfbmFtZSI6IlNhdGhpc2giLCJsYXN0X25hbWUiOiJLdW1hciIsInByb2ZpbGVfcGljdHVyZV91cmwiOiJodHRwczovL3d3dy53M3NjaG9vbHMuY29tL3czaW1hZ2VzL2F2YXRhcjIucG5nIiwidGVuYW50X2lkIjoiYmVmNTNiZDQtNTVmYi00ZWYwLTkzZjktNTUzZjY0NDgwNWVlIiwicHJpbWFyeV9jb2xvciI6IiNlYjcxMzQiLCJzZWNvbmRhcnlfY29sb3IiOiIjZmZmZmZmIiwibG9nb191cmwiOiJodHRwczovL3VyYnVkZGkuczMuYXAtc291dGgtMS5hbWF6b25hd3MuY29tL09wdGltd29ya3NfVGVjaG5vbG9naWVzX1B2dF9MdGQvbG9nb191cmwvbG9nb191cmxfMjAyNDAyMjExMDA4MjMucG5nIn0.IlJzNwifaTwfDdSDV_rTnc4H_c6dN7fzV6yyCxO5tRU</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>
